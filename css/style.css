@@ -1,0 +1,810 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: #1d273b;
+    font-weight: 300;
+}
+
+h2 {
+    color: #1d273b;
+    font-weight: 300;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+nav{
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.671);
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav .logo {
+    height: 80px;
+}
+
+.nav .logo img {
+    height: 100%;
+    vertical-align: top;
+}
+
+.enlaces-header {
+    font-weight: 300;
+}
+
+.nav .enlaces-header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav .enlaces-header>a:hover {
+    color: #d6f526;
+    transition: color 0.5s;
+    transition: ease-in 0.2s;
+}
+
+header {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    z-index: 0;
+}
+
+.headerh {
+
+    background: url(../img/food-1839061_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0 100px;
+}
+
+header h1 {
+    font-size: 125px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 12rem;
+    z-index: 2;
+    color: #fff;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+/* Etiquetas expandibles */
+
+.container {
+
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container .card {
+    position: relative;
+}
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.content h3,
+h2 {
+    color: white;
+
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container .card .face.face1.d {
+    position: relative;
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.503), hsla(0, 0%, 0%, 0.703)), url(../img/box-2687558_1920.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card .face.face1.b {
+    position: relative;
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.503), hsla(0, 0%, 0%, 0.703)), url(../img/abundance-1868573_1920.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card .face.face1.w {
+    position: relative;
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.503), hsla(0, 0%, 0%, 0.703)), url(../img/bouquet-1854074_1920.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card .face.face1.a {
+    position: relative;
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.503), hsla(0, 0%, 0%, 0.703)), url(../img/wedding-1937022_1920.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1 {
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content img {
+    max-width: 100%;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-weight: 500;
+    padding: 20;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+    font-size: 18px;
+    color: #333;
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+}
+
+.container .card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.iniciar{
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.303), hsla(0, 0%, 0%, 0.603)), url(../img/wedding-1937022_1920.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.iniciar h1,
+h3 {
+    color: #fff;
+    font-style: oblique
+}
+
+.iniciar h1 {
+    margin-top: 100px;
+    font-size: 75px;
+}
+
+.iniciar h3 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+/* Boton Neon */
+.iniciar a {
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #d6f526;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.iniciar a:hover {
+    color: black;
+    opacity: 1;
+    background: #d6f526;
+    box-shadow: 0 0 10px #d6f526, 0 0 40px #d6f526, 0 0 80px #d6f526;
+    transition-delay: 1s;
+}
+
+.bt a {
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #d6f526;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.bt a:hover {
+    color: black;
+    opacity: 1;
+    background: #d6f526;
+    box-shadow: 0 0 10px #d6f526, 0 0 40px #d6f526, 0 0 80px #d6f526;
+    transition-delay: 1s;
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d6f526);
+}
+
+a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #d6f526);
+}
+
+a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #d6f526);
+}
+
+a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #d6f526);
+}
+
+a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.titulo-final {
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+footer {
+    background: rgb(27, 27, 27);
+}
+
+.cont-footer {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0;
+    overflow: hidden;
+    margin: auto;
+    border-bottom: 1px solid #d6f526;
+}
+
+footer .foot {
+    width: 30%;
+    text-align: center;
+}
+
+.foot h4 {
+    color: #3c5380;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    align-items: baseline;
+}
+
+.foot a {
+    display: block;
+    text-decoration: none;
+    color: #5D6678;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.foot p {
+    color: #5D6678;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.foot a:hover {
+    color: #d6f526;
+}
+
+.social-media i {
+    font-size: 20px;
+    display: inline-block;
+    color: #d6f526;
+    border: 1px solid #d6f526;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    padding-top: 7px;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+}
+
+.social-media i:hover {
+    color: #768425;
+    background: #d6f526;
+    box-shadow: 0 0 10px #d6f526, 0 0 40px #d6f526, 0 0 80px #d6f526;
+}
+
+/* ------------------------- */
+
+.headerg {
+    background: url(../img/spaghetti-2931846_1920.jpg);
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.303), hsla(0, 0%, 0%, 0.603)), url(../img/spaghetti-2931846_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    padding: 100px 0;
+}
+
+.galeria img {
+    box-shadow: 0 8px 10px -4px rgba(0, 0, 0, .6);
+    border-radius: 15px;
+}
+
+.materialbox-caption {
+    bottom: 30px;
+    right: 0;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    background: #000;
+    box-shadow: 5px 5px #fff;
+    font-size: 20px;
+    color: #fff;
+    line-height: 28px;
+}
+
+
+
+.headerp {
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.303), hsla(0, 0%, 0%, 0.603)), url(../img/restaurant-691397_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.headera {
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.303), hsla(0, 0%, 0%, 0.603)), url(../img/chef-657352_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.headerc {
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.303), hsla(0, 0%, 0%, 0.603)), url(../img/drinks-2578446_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.headers {
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.303), hsla(0, 0%, 0%, 0.603)), url(../img/kitchen-731351_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*form*/
+.form {
+    overflow: hidden;
+}
+
+.form-register {
+    float: left;
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: 50px;
+    margin-left: 220px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.img-register {
+    float: left;
+    width: 400px;
+    background: linear-gradient(to right, hsla(207, 82%, 31%, 0.303), hsla(0, 0%, 0%, 0.603)), url(../img/restaurant-691397_1920.jpg);
+    background-size: cover;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 4px;
+    height: 610px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    border: 1px solid #d6f526;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #c0d643;
+    padding: 12px;
+    color: #24303c;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.ct {
+    text-align: center;
+}
+
+.place {
+    background: #e5e5e5;
+    height: 500px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.place h3 {
+    color: grey;
+    font-style: oblique
+}
+
+.place h1 {
+    color: black;
+    margin-top: 100px;
+    font-size: 75px;
+}
+
+.place h3 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.place a {
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #4c5710;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.place a:hover {
+    color: #46500d;
+    opacity: 1;
+    background: #d6f526;
+    box-shadow: 0 0 10px #d6f526, 0 0 40px #d6f526, 0 0 80px #d6f526;
+    transition-delay: 1s;
+}
+
+.galeria .col {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .materialbox-caption {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .materialbox-caption {
+        width: 70%;
+    }
+}
+
+/*About us*/
+.cartas {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.carta1,
+.carta2,
+.carta3 {
+
+    margin: 20px 0;
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    padding: 300px 25px 10px 25px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.carta1 {
+
+    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.411), hsla(0, 0%, 0%, 0.411)), url(../img/chef-1245676_1920.jpg);
+    background-position-x: -80px;
+    background-size: cover;
+}
+
+.carta1:hover {
+
+    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0)), url(../img/chef-1245676_1920.jpg);
+    background-position-x: -80px;
+    background-size: cover;
+    transition: 2s;
+}
+
+.carta2 {
+    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.411), hsla(0, 0%, 0%, 0.411)), url(../img/baker-1620504_1920.jpg);
+    background-size: cover;
+}
+
+.carta2:hover {
+
+    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0)), url(../img/baker-1620504_1920.jpg);
+    background-size: cover;
+    transition: 2s;
+}
+
+.carta3 {
+    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.411), hsla(0, 0%, 0%, 0.411)), url(../img/cook-196932_1920.jpg);
+    background-size: cover;
+}
+
+.carta3:hover {
+
+    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0)), url(../img/cook-196932_1920.jpg);
+    background-size: cover;
+    transition: 2s;
+}
+
+.carta h4 {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.carta p {
+    color: rgb(255, 255, 255);
+}
+
+.miembros {
+    background: #e5e5e5;
+}
+
+.contenedor h1 {
+    color: Black;
+    text-align: center;
+    font-weight: 60px;
+    font-size: 30px;
+}
+
+.hr {
+    height: 3px;
+    width: 30%;
+    background-color: black;
+    margin: 0 auto 20px;
+}
+
+.place h4 {
+    font-size: 40px;
+}
+
+
+
+.comentarios {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0px;
+}
+
+.comentario1,
+.comentario2,
+.comentario3 {
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    background: #24303c;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.com1 {
+    height: 140px;
+    width: 140px;
+    background: url(../img/child-632657_1920.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+    background-position-x: -30px;
+
+}
+
+.com2 {
+    height: 140px;
+    width: 140px;
+    background: url(../img/man-1202407_1920.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+
+}
+
+.com3 {
+    height: 140px;
+    width: 140px;
+    background: url(../img/mark-twain-1602117_1920.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+
+}
+
+.comentario1,
+.comentario2,
+.comentario3 h2 {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.comentario1,
+.comentario2,
+.comentario3 p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
